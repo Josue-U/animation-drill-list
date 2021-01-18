@@ -12,12 +12,13 @@ margin-right:60%;
 
 	height: 100px;
 	width: 100px;
+	border:solid;
 }
 
 .image:hover{
 
 	background-color: white;
-	transition: 3s;
+	transition: 2s;
 	transform:translateX(180px);
 }
 
