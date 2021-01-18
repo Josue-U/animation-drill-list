@@ -1,4 +1,8 @@
+body{
 
+	background-color: gray;
+	font-family: "Calibri",sans-serif;
+}
 
 
 .onglet{
@@ -34,7 +38,7 @@ p{
 
 	transition: 3s;
 	transform:translateX(180px);
-	
+
 	display: flex;
 	align-content: center;
 	background-color: white;
