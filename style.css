@@ -25,8 +25,8 @@ margin-right:60%;
 
 p{
 
-	display: flex;
-	align-items: flex-start;
+	display: none;
+	
 
 }
 
@@ -34,7 +34,9 @@ p{
 
 	transition: 3s;
 	transform:translateX(180px);
+	
 	display: flex;
 	align-content: center;
+	background-color: white;
 
 }
