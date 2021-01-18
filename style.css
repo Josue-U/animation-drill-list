@@ -4,6 +4,7 @@
 .onglet{
 
 background-color: orange;
+margin-right:60%;
 
 }
 
@@ -16,11 +17,15 @@ background-color: orange;
 .image:hover{
 
 	background-color: white;
+	transition: 3s;
+	transform:translateX(180px);
 }
 
-.txte{
 
-	/*display: none;*/
+
+/*.txte{
+
+	
 	padding-top: 100px;
 	padding-bottom: 100px;
 	display: flex;
@@ -35,4 +40,4 @@ background-color: orange;
 	display: flex;
 	align-content: center;
 
-}
+}*/
