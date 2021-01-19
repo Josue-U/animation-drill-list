@@ -1,47 +1,93 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
 
 	background-color: gray;
 	font-family: "Calibri",sans-serif;
+	font-size:18px;
 }
 
+.menu{
+
+	width:200px; 
+	height:500px;
+}
 
 .onglet{
 
-background-color: orange;
-margin-right:60%;
-display: inline-block;
+display: flex;
+grid-template-columns: 60px 120px;
+grid-template-rows: 60px;
+grid-template-areas: ".image .item"; 
+
 
 }
+
+
 
 .image{
 
 	height: 100px;
 	width: 100px;
-	border:solid;
+	border: solid;
+	background: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;/*modifie le niveau de la div*/ /*soit ici*/
+}
+
+.image img{
+
+	background-position: left top;
+	background-size: cover;
+	transform: scale(0.1);
+	
+}
+
+
+
+.item{
+
+	background-color: white;
+	width: 120px;
+	opacity: 0;
+	transition: opacity 3s, margin-left 1s;
+	margin-left:-120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*z-index: -1;*/ /*soit là*/
+
+	
+
 }
 
 .image:hover{
 
-	background-color: white;
-	
-}
+background: white;
+transition: 2s;
 
 
-
-p{
-
-	display: none;
-	
 
 }
 
-.image:hover p{
+.image:hover + .item{
 
-	transition: 3s;
-	transform:translateX(180px);
-
-	display: flex;
-	align-content: center;
-	background-color: white;
-
+	opacity: 1;
+	margin-left: 0;
 }
+
+.item a{
+
+	text-decoration: none;
+	color: orange;
+}
+
+.image img{
+
+	transform: scale(0.3);
+}
+
